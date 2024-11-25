@@ -1,0 +1,46 @@
+
+.registration-container {
+    display: flex;
+    justify-content: space-between;
+    color: #caf0f8;
+    background-color: #caf0f8;
+}
+
+.registration-form {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #caf0f8;
+}
+
+.registration-form input {
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.registration-form button {
+    width: 100%;
+}
+.Input {
+    width: 100%; /* Ширина поля занимает 100% доступного пространства */
+    padding: 10px; /* Отступы вокруг текста */
+    margin-bottom: 20px; /* Небольшой отступ снизу */
+    border: 1px solid #ccc; /* Граница поля */
+    border-radius: 5px; /* Закругленные углы */
+    box-sizing: border-box; /* Учитываем границу и отступы в расчете ширины */
+    font-size: 16px; /* Размер текста */
+}
+
+.Input:focus {
+    outline: none; /* Убираем обводку при фокусе */
+    border-color: #023e8a; /* Изменяем цвет границы при фокусе */
+}
+.input-container label {
+    display: block; /* Place labels on a new line */
+    margin-bottom: 5px; /* Small space between label and input field */
+    font-weight: bold; /* Bold font for labels */
+}

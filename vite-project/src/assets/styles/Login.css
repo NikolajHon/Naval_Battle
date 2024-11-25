@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #003459;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120%;
+}
+.human{
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+    animation: rotation infinite 5s;
+}
+.human2{
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+    animation: rotation2 infinite 5s;
+}
+#root{
+    height: 100%;
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateZ(-8deg); /* Начальный наклон влево */
+    }
+    50% {
+        transform: rotateZ(8deg); /* Наклон вправо */
+    }
+    100% {
+        transform: rotateZ(-8deg); /* Возвращение к начальному наклону влево */
+    }
+}
+@keyframes rotation2 {
+    0% {
+        transform: rotateZ(8deg); /* Начальный наклон влево */
+    }
+    50% {
+        transform: rotateZ(-8deg); /* Наклон вправо */
+    }
+    100% {
+        transform: rotateZ(8deg); /* Возвращение к начальному наклону влево */
+    }
+}

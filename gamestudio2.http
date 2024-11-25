@@ -1,0 +1,7 @@
+POST http://localhost:8080/battleship/sendCoordinates
+Content-Type: application/json
+
+{
+  "row": "1",
+  "column": "2"
+}

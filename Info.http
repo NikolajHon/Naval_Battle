@@ -1,0 +1,12 @@
+POST http://localhost:8080/api/info_about_game
+Content-Type: application/json
+
+{
+  "game": "Chess",
+  "name_first_player": "Alice",
+  "name_second_player": "Bob",
+  "name_of_winner": "Alice",
+  "rating_of_first_player": 1500,
+  "rating_of_second_player": 1400,
+  "ratedOn": "2024-04-10T10:00:00"
+}

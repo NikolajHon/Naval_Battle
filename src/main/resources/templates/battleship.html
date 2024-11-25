@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GameStudio</title>
+    <link rel="stylesheet" href="/css/stylesheet.css"/>
+    <style>
+        /* Стили для вкладок */
+        .tabs {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        .tabs li {
+            float: left;
+        }
+
+        .tabs li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .tabs li a:hover {
+            background-color: #ddd;
+        }
+
+        .tabs li.active {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<!-- Вкладки -->
+<ul class="tabs">
+    <li><a href="#rating">Rating</a></li>
+    <li><a href="#score">Score</a></li>
+    <li><a href="#comment">Comment</a></li>
+    <li><a href="#previous-matches">Предыдущие матчи</a></li>
+</ul>
+
+<!-- Контент -->
+<div id="rating" style="display:none;">
+    <!-- Контент для вкладки "Rating" -->
+</div>
+
+<div id="score" style="display:none;">
+    <!-- Контент для вкладки "Score" -->
+</div>
+
+<div id="comment" style="display:none;">
+    <!-- Контент для вкладки "Comment" -->
+</div>
+
+<div id="previous-matches" style="display:none;">
+    <!-- Контент для вкладки "Предыдущие матчи" -->
+</div>
+
+<!-- Контент для вывода поля из контроллера -->
+<span th:utext="${@battleshipController.getHtmlField()}"></span>
+</body>
+</html>

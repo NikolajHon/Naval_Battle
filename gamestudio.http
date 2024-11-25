@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/rating
+Content-Type: application/json
+
+{
+
+  "game": "battleship",
+  "player": "Kolya",
+  "rating": 5,
+  "ratedOn": "2024-03-22T12:40:13"
+}

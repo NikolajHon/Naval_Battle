@@ -1,0 +1,73 @@
+/* Score.css */
+.score-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* добавляем тень */
+    max-width: 600px; /* ограничиваем максимальную ширину */
+    margin: 0 auto; /* центрируем по горизонтали */
+}
+
+.table-container {
+    overflow-x: auto; /* добавляем горизонтальную прокрутку, если содержимое таблицы выходит за границы */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-player {
+    background-color: gold; /* золотой цвет */
+    color: white;
+}
+
+.top-player:nth-child(2) {
+    background-color: silver; /* серебряный цвет */
+}
+
+.top-player:nth-child(3) {
+    background-color: #cd7f32; /* бронзовый цвет */
+}
+.team{
+    width:30px;
+    height:30px;
+    animation: scaleAnimation 2s infinite;
+}
+.pisun{
+    width:20px;
+    height:20px;
+    animation: sway 3s infinite;
+}
+.tt tr:not(thead tr):hover  {
+
+    transform: scale(0.9); /* Увеличиваем масштаб при наведении на строку */
+
+}
+
+@keyframes scaleAnimation {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+}
+@keyframes sway {
+    0% {
+        transform: rotateZ(-5deg);
+    }
+    50% {
+        transform: rotateZ(5deg);
+    }
+    100% {
+        transform: rotateZ(-5deg);
+    }
+}
+

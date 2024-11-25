@@ -1,0 +1,35 @@
+.AppBar {
+    top: 100px;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fdf0d5;
+    color: #fdf0d5;
+}
+
+.Toolbar {
+    display: flex;
+    justify-content: space-between; /* Расположение элементов с промежутком между ними */
+    padding: 8px 16px; /* Добавляем паддинги сверху и снизу */
+}
+
+.Typography {
+    flex-grow: 1;
+}
+
+.Link {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 8px; /* Добавляем нижний отступ */
+    padding: 10px; /* Добавляем отступы вокруг содержимого */
+}
+.LinksContainer {
+    margin-left: 1rem; /* Добавление отступа между ссылками */
+}
+
+@media (max-width: 844px) {
+    header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionFixed.AppBar.mui-fixed.css-1vt3udd-MuiPaper-root-MuiAppBar-root{
+        display: none;
+    }
+}
+
+

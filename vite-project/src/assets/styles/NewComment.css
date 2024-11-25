@@ -1,0 +1,72 @@
+.huy form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+}
+.huy{
+    background-color: #023e8a;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px black;
+}
+.huy form label:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+
+}
+.huy form label:nth-child(2){
+    grid-column: 1;
+    grid-row: 2;
+}
+.huy form label:nth-child(3){
+    grid-column: 1;
+    grid-row: 3;
+}
+.huy form label:nth-child(4){
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.huy form button{
+    grid-column: 1;
+    grid-row: 5;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.label {
+    margin-bottom: 10px; /* отступ между label */
+    text-align: center; /* выравнивание текста по центру */
+}
+
+input,
+textarea {
+    width: 80%; /* ширина полей ввода равна ширине родителя (формы) */
+    padding: 8px; /* внутренний отступ для полей ввода */
+    margin-bottom: 10px; /* отступ между полями ввода */
+    background-color: #003459;
+}
+
+.button {
+    width: 30%; /* ширина кнопки равна ширине родителя (формы) */
+    padding: 10px; /* внутренний отступ для кнопки */
+}
+@media (max-width: 844px) {
+    header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionFixed.AppBar.mui-fixed.css-1vt3udd-MuiPaper-root-MuiAppBar-root{
+        display: none;
+    }
+    .huy form{
+        width: 80%;
+    }
+    .huy{
+        margin-top: 150px;
+        width:  300px;
+    }
+}

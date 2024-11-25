@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px; /* Настройте зазор по вашему усмотрению */
+}
+
+.grid-container img {
+    max-width: 100%;
+    height: auto;
+    margin: -2px; /* Установите отрицательный отступ, равный величине зазора */
+}

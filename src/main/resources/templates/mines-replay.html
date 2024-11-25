@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gamestudio</title>
+    <link rel="stylesheet" href="/css/stylesheet.css"/>
+
+    <!-- Render score with JavaScript  and jQuery https://jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Render mines field from web service responding with html  -->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function () {
+            refreshMinefield();
+
+            setInterval(refreshMinefield, 500);
+        });
+
+        function refreshMinefield() {
+            $.ajax({
+                url: "/mines/field-replay",
+            }).done(function (html) {
+                $("#minefieldFromService").html(html);
+            });
+        }
+        //]]>
+    </script>
+</head>
+<body>
+
+<div th:replace="fragments::header"/>
+
+<h2>Minesweeper - replay</h2>
+
+<h2>Mine field - replaying</h2>
+<div id="minefieldFromService">
+</div>
+
+<div th:replace="fragments::footer"/>
+
+</body>
+</html>
+
